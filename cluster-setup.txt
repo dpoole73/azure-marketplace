@@ -1,0 +1,27 @@
+connect to kibana, develop and run this
+
+for small clusters:
+
+PUT /products
+{
+  "settings": {
+    "index" : {
+        "number_of_shards" : 1,
+        "number_of_replicas" : 4,
+	"index.max_result_window" : 20000
+    }
+  }
+}
+
+for large cluster
+
+PUT /products
+{
+  "settings": {
+    "index" : {
+        "number_of_shards" : 1,
+        "number_of_replicas" : 11,
+	"index.max_result_window" : 20000
+    }
+  }
+}

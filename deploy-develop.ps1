@@ -1,0 +1,2 @@
+az group create --location westcentralus --name rhapso-develop-es --tags 'rhapso-env=rhapso-develop'
+az group deployment create --template-uri ./src/mainTemplate.json --parameters-file parameters/password.parameters.develop.json -g rhapso-develop-es

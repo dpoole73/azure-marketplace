@@ -1,0 +1,2 @@
+az group create --location southeastasia --name rhapso-es-test2 --tags 'rhapso-env=rhapso-production'
+az group deployment create --template-uri ./src/mainTemplate.json --parameters-file parameters/password.parameters.production.json -g rhapso-es-test2

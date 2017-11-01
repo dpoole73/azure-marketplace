@@ -8,7 +8,7 @@ PUT /products
     "index" : {
         "number_of_shards" : 1,
         "number_of_replicas" : 4,
-	"index.max_result_window" : 20000
+	"max_result_window" : 20000
     }
   }
 }
@@ -21,7 +21,7 @@ PUT /products
     "index" : {
         "number_of_shards" : 1,
         "number_of_replicas" : 11,
-	"index.max_result_window" : 20000
+	"max_result_window" : 20000
     }
   }
 }

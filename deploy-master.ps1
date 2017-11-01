@@ -1,2 +1,2 @@
 az group create --location westcentralus --name rhapso-master-es --tags 'rhapso-env=rhapso-master'
-az group deployment create --template-uri ./src/mainTemplate.json --parameters-file parameters/password.parameters.master.json -g rhapso-master-es
+az group deployment create --template-file ./src/mainTemplate.json --parameters ./parameters/password.parameters.master.json -g rhapso-master-es
